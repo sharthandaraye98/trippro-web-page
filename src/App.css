@@ -28,11 +28,55 @@
   color: #61dafb;
 }
 
+@font-face {
+  font-family: "OpenSanRegular";
+  src: url("../src/font/OpenSans-Regular.ttf");
+}
+@font-face {
+  font-family: "OpenSanLight";
+  src: url("../src/font/OpenSans-Light.ttf");
+}
+@font-face {
+  font-family: "OpenSanBold";
+  src: url("../src/font/OpenSans-Bold.ttf");
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flex-row {
+    flex-direction: column;
+  }
+
+  .challenge {
+    flex-basis: 100%;
+  }
+
+  .text-left {
+    text-align: center;
+  }
+
+  .lorem {
+    width: 90%;
+  }
+
+  .w-48 {
+    width: 100%;
+  }
+
+  .h-80 {
+    height: auto;
+    max-width: 100%;
   }
 }
